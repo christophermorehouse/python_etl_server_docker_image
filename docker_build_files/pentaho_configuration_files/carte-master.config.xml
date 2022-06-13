@@ -1,0 +1,22 @@
+<slave_config>
+
+  <slaveserver>
+    <name>CARTE_NAME</name>
+    <network_interface>CARTE_NETWORK_INTERFACE</network_interface>
+    <hostname>CARTE_HOSTNAME</hostname>
+    <port>CARTE_PORT</port>
+    <username>CARTE_USER</username>
+    <password>CARTE_PASSWORD</password>
+    <master>CARTE_IS_MASTER</master>
+  </slaveserver>
+
+  <!-- Prevent out of memory by only keeping 10,000 rows in the central log buffer -->
+  <max_log_lines>10000</max_log_lines>
+
+  <!-- Discard log lines if they are in the buffer for more than 2 days -->
+  <max_log_timeout_minutes>2880</max_log_timeout_minutes>
+
+  <!-- Remove finished, waiting or stopped objects from after 60 minutes -->
+  <object_timeout_minutes>60</object_timeout_minutes>
+
+</slave_config>
