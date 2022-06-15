@@ -33,9 +33,9 @@ COPY docker_build_files/pentaho_configuration_files/carte-*.config.xml ${KETTLE_
 COPY docker_build_files/docker-entrypoint.sh ${KETTLE_HOME}/scripts/
 COPY docker_build_files/pentaho_configuration_files/python_dependencies.txt ${KETTLE_HOME}/docker-entrypoint.d/
 COPY docker_build_files/pentaho_configuration_files/python_plugins.zip ${KETTLE_HOME}/docker-entrypoint.d/
-COPY docker_build_files/pentaho_configuration_files/kettle.properties ${KETTLE_HOME}/.kettle/
-COPY etl_files/python_scripts/*.py  ${KETTLE_HOME}/etl_files/python_scripts/
-COPY etl_files/*.ktr ${KETTLE_HOME}/etl_files/
+#COPY docker_build_files/pentaho_configuration_files/kettle.properties ${KETTLE_HOME}/.kettle/
+#COPY etl_files/python_scripts/*.py  ${KETTLE_HOME}/etl_files/python_scripts/
+#COPY etl_files/*.ktr ${KETTLE_HOME}/etl_files/
 #COPY etl_files/*.kjb ${KETTLE_HOME}/etl_files/
 
 # Base image has python3 already installed. Install pip3, then install python dependencies required for ETL. 

@@ -1,4 +1,7 @@
-import requests, json, os, sys
+import json
+import os
+import requests
+import sys
 
 # these variables use pdi variables, ex. ${varname}, as their values.
 # to run this script outside of pdi, change these to literals or use python .env
