@@ -47,7 +47,8 @@ if [ "$1" = 'carte.sh' ]; then
   fi
 fi
 
-sed -i "s/-Xmx2048m/-Xmx4096m/" "spoon.sh"
+# uncomment the line below to adjust the jvm memory settings carte will use to run
+#sed -i "s/-Xmx2048m/-Xmx4096m/" "spoon.sh"
 
 # Run any custom scripts
 if [ -d $KETTLE_HOME/docker-entrypoint.d ]; then
